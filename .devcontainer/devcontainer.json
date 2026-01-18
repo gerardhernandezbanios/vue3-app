@@ -1,5 +1,5 @@
 {
-  "name": "SvelteKit TypeScript + pnpm + Tailwind + Skeleton",
+  "name": "Vue3 + Vite + pnpm Dev Container",
   "build": {
     "dockerfile": "Dockerfile",
     "context": ".."
@@ -19,11 +19,9 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "bradlc.vscode-tailwindcss",
+        "vue.volar",
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
-        "skeletonlabs.skeleton-svelte-vscode",
-        "svelte.svelte-vscode",
         "ms-vscode.vscode-typescript-next"
       ],
       "settings": {
