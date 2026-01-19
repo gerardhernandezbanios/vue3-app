@@ -7,7 +7,7 @@
   "workspaceFolder": "/workspace",
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=>",
   "remoteUser": "node",
-  "forwardPorts": [5173],
+  "forwardPorts": [5173, 4173],
   "postCreateCommand": "bash .devcontainer/postCreate.sh",
   "mounts": [
     "source=pnpm-store,target=/home/node/.local/share/pnpm,type=volume"
