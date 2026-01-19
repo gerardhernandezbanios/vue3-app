@@ -26,8 +26,13 @@
       ],
       "settings": {
         "editor.formatOnSave": true,
-        "files.associations": { "*.css": "tailwindcss" },
-        "tailwindCSS.includeLanguages": { "svelte": "html" }
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "typescript.tsdk": "node_modules/typescript/lib",
+        "typescript.enablePromptUseWorkspaceTsdk": true,  
+        "vue.features.codeActions": true,
+        "vue.features.semanticTokens": true, 
+        "vue.languageServer.trace.server": "verbose", 
+        "vue.languageServer.useWorkspaceTsdk": true
       }
     }
   }
