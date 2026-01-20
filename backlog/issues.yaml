@@ -1,0 +1,95 @@
+issues:
+  - title: "Configurar estructura base del frontend"
+    body: "Configurar estructura inicial del proyecto Vue 3 + Vite, incluyendo carpetas, alias y convenciones."
+    labels: ["frontend", "infra"]
+    milestone: "Fase FE 1 — Base del Proyecto"
+
+  - title: "Configurar Naive UI y tema global"
+    body: "Integrar Naive UI, configurar theme provider y preparar tokens de color base."
+    labels: ["frontend", "ux"]
+    milestone: "Fase FE 1 — Base del Proyecto"
+
+  - title: "Implementar tema Strava (light/dark)"
+    body: "Crear paleta personalizada inspirada en Strava, con variantes light/dark y tokens reutilizables."
+    labels: ["frontend", "ux"]
+    milestone: "Fase FE 1 — Base del Proyecto"
+
+  - title: "Integrar Lucide Icons"
+    body: "Configurar librería de iconos Lucide y crear wrapper de iconos para uso consistente."
+    labels: ["frontend", "ux"]
+    milestone: "Fase FE 1 — Base del Proyecto"
+
+  - title: "Crear layout principal responsive"
+    body: "Sidebar, topbar, navegación, breakpoints, modo móvil con menú hamburguesa."
+    labels: ["frontend", "ux"]
+    milestone: "Fase FE 2 — Layout y Navegación"
+
+  - title: "Crear sistema de rutas modular"
+    body: "Configurar Vue Router con lazy loading, rutas por módulo y guards."
+    labels: ["frontend", "infra"]
+    milestone: "Fase FE 2 — Layout y Navegación"
+
+  - title: "Crear store global"
+    body: "Configurar Pinia para estado global: usuario, tema, preferencias."
+    labels: ["frontend", "infra"]
+    milestone: "Fase FE 2 — Layout y Navegación"
+
+  - title: "Crear componentes base"
+    body: "AppCard, AppSection, AppStat, AppChartContainer, AppButton, AppInput."
+    labels: ["frontend"]
+    milestone: "Fase FE 3 — Componentes Base"
+
+  - title: "Crear sistema de tipografías y espaciados"
+    body: "Tokens de tipografía, tamaños, espaciados y reglas responsivas."
+    labels: ["frontend", "ux"]
+    milestone: "Fase FE 3 — Componentes Base"
+
+  - title: "Integrar librería de gráficos"
+    body: "Evaluar e integrar ECharts, ApexCharts o Chart.js con wrapper propio."
+    labels: ["frontend", "analytics"]
+    milestone: "Fase FE 4 — Dashboards"
+
+  - title: "Dashboard principal"
+    body: "Distancia, tiempo, elevación, ritmo, gráficas básicas y resumen semanal."
+    labels: ["frontend", "analytics"]
+    milestone: "Fase FE 4 — Dashboards"
+
+  - title: "Vista de actividad"
+    body: "Mapa, splits, HR, velocidad, detalles de la actividad."
+    labels: ["frontend", "analytics"]
+    milestone: "Fase FE 4 — Dashboards"
+
+  - title: "Integrar mapas"
+    body: "Evaluar Leaflet, MapLibre o Mapbox; crear wrapper y estilos."
+    labels: ["frontend", "analytics"]
+    milestone: "Fase FE 4 — Dashboards"
+
+  - title: "Preferencias persistentes"
+    body: "Persistencia de tema, widgets, orden, métricas favoritas."
+    labels: ["frontend", "ux"]
+    milestone: "Fase FE 5 — Personalización"
+
+  - title: "Animaciones y microinteracciones"
+    body: "Transiciones suaves, hover states, feedback visual."
+    labels: ["frontend", "ux"]
+    milestone: "Fase FE 5 — Personalización"
+
+  - title: "Sistema de módulos/dashboards extensibles"
+    body: "Arquitectura para añadir dashboards como plugins internos."
+    labels: ["frontend", "infra"]
+    milestone: "Fase FE 6 — Extensibilidad"
+
+  - title: "Storybook para componentes"
+    body: "Documentar componentes visuales y estados."
+    labels: ["frontend", "documentation"]
+    milestone: "Fase FE 6 — Extensibilidad"
+
+  - title: "Tests E2E"
+    body: "Configurar Playwright o Cypress para flujos críticos."
+    labels: ["frontend", "infra"]
+    milestone: "Fase FE 6 — Extensibilidad"
+
+  - title: "Scripts de generación"
+    body: "create:component, create:module, create:page."
+    labels: ["frontend", "infra"]
+    milestone: "Fase FE 6 — Extensibilidad"
