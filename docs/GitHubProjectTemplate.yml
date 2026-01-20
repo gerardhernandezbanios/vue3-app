@@ -1,0 +1,41 @@
+project:
+  name: "Frontend — Strava Analytics"
+  description: "Roadmap y backlog del frontend Vue 3 + Vite + Naive UI."
+
+  views:
+    - name: "Kanban"
+      type: "board"
+      columns:
+        - Backlog
+        - Ready
+        - In Progress
+        - Review
+        - Done
+
+    - name: "Roadmap"
+      type: "roadmap"
+      group_by: "milestone"
+
+    - name: "Componentes"
+      type: "table"
+      filter: "label:frontend"
+      fields:
+        - Status
+        - Milestone
+        - Labels
+        - Assignees
+
+  labels:
+    - frontend
+    - ux
+    - analytics
+    - infra
+    - documentation
+
+  milestones:
+    - Fase FE 1 — Base del Proyecto
+    - Fase FE 2 — Layout y Navegación
+    - Fase FE 3 — Componentes Base
+    - Fase FE 4 — Dashboards
+    - Fase FE 5 — Personalización
+    - Fase FE 6 — Extensibilidad
