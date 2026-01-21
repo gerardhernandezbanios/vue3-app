@@ -1,16 +1,19 @@
-<script setup lang="ts">
-import { darkTheme } from "naive-ui";
-import { ref } from "vue";
-
-const isDark = ref(false);
-</script>
-
 <template>
-  <n-config-provider :theme="isDark ? darkTheme : null">
-    <router-view />
-  </n-config-provider>
+  <v-app>
+    <MainLayout />
+  </v-app>
 </template>
 
+<script setup lang="ts">
+import MainLayout from "@/layouts/MainLayout.vue";
+</script>
+
 <style>
-/* estilos globales opcionales */
+/* estilos globales mínimos */
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+}
 </style>

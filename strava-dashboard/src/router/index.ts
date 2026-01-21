@@ -1,24 +1,27 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import type { RouteRecordRaw } from 'vue-router'
+import { createRouter, createWebHistory } from "vue-router";
+import dashboard from "./routes/dashboard";
+import activities from "./routes/activities";
+import trends from "./routes/trends";
+import maps from "./routes/maps";
+import settings from "./routes/settings";
 
+const routes = [
+  { path: "/", redirect: "/dashboard" },
+  dashboard,
+  activities,
+  trends,
+  maps,
+  settings,
+  { path: "/:pathMatch(.*)*", redirect: "/dashboard" },
+];
 
-import Dashboard from '../pages/Dashboard.vue'
-import Activities from '../pages/Activities.vue'
-import Maps from '../pages/Maps.vue'
-import Stats from '../pages/stats.vue'
-import Challeges from '../pages/Challenges.vue'
-import Profile from '../pages/Profile.vue'
+const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes,
+});
 
-const routes: RouteRecordRaw[] = [
-  { path: '/', component: Dashboard },
-  { path: '/activities', component: Activities },
-  { path: '/maps', component: Maps   },
-  { path: '/stats', component: Stats },
-  { path: '/challenges', component: Challeges },
-  { path: '/profile', component: Profile }
-]
+router.beforeEach((to) => {
+  document.title = (to.meta?.title as string) || "Strava Analytics";
+});
 
-export const router = createRouter({
-  history: createWebHistory(),
-  routes
-})
+export default router;
