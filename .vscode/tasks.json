@@ -1,0 +1,28 @@
+// .vscode/tasks.json (en la raíz)
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "strava: dev",
+      "type": "shell",
+      "command": "pnpm dev",
+      "isBackground": true,
+      "options": { "cwd": "${workspaceFolder}/strava-dashboard" },
+      "problemMatcher": []
+    },
+    {
+      "label": "strava: typecheck",
+      "type": "shell",
+      "command": "pnpm exec tsc --noEmit",
+      "options": { "cwd": "${workspaceFolder}/strava-dashboard" },
+      "problemMatcher": ["$tsc"]
+    },
+    {
+      "label": "strava: lint",
+      "type": "shell",
+      "command": "pnpm exec eslint --ext .ts,.tsx,.vue src",
+      "options": { "cwd": "${workspaceFolder}/strava-dashboard" },
+      "problemMatcher": ["$eslint-stylish"]
+    }
+  ]
+}
